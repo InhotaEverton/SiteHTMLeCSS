@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="/style/style.css" rel="stylesheet">
+    <link href="/style/fonts.css" rel="stylesheet">
+    <link href="/style/media.css" rel="stylesheet">
+    <title>Cadastro Completo - ECI Informática</title>
+    <script>
+        function mostrarMensagem() {
+            alert("Seu cadastro foi concluído com sucesso, em breve entraremos em contato pelo telefone ou e-mail.");
+        }
+    </script>
+</head>
+<body>
+    <header>
+        <div id="title">
+            <h1>ECI Informática</h1>
+            <h1>Tecnologia e Inovação</h1>
+            <img src="Images/tendencias-em-tecnologia-para-2023-o-que-ja-vingou-o-que-ficou-pelo-caminho-e-novas-apostas.jpg" alt="Imagem de tecnologia" class="imagem-reduzida">
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Início</a></li>
+                <li><a href="servicos.html">Serviços</a></li>
+                <li><a href="sobre.html">Sobre</a></li>
+                <li><a href="contato.html">Contato</a></li>
+                <li><a href="plano.html" id="plano-btn">Contrate um plano</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="cadastro-completo">
+            <h2>Cadastro Completo</h2>
+            <p>Por favor, preencha o formulário abaixo para completar seu cadastro.</p>
+            
+            <form action="https://seusite.com/cadastro-completo" method="post" class="formulario-cadastro" onsubmit="mostrarMensagem(); return false;">
+                <label for="nome">Nome:</label>
+                <input type="text" id="nome" name="nome" placeholder="Seu nome" required>
+                
+                <label for="email">E-mail:</label>
+                <input type="email" id="email" name="email" placeholder="Seu e-mail" required>
+                
+                <label for="telefone">Telefone:</label>
+                <input type="tel" id="telefone" name="telefone" placeholder="Seu telefone" required>
+                
+                <label for="endereco">Endereço:</label>
+                <input type="text" id="endereco" name="endereco" placeholder="Seu endereço" required>
+                
+                <label for="cidade">Cidade:</label>
+                <input type="text" id="cidade" name="cidade" placeholder="Sua cidade" required>
+                
+                <label for="estado">Estado:</label>
+                <input type="text" id="estado" name="estado" placeholder="Seu estado" required>
+                
+                <input type="submit" value="Enviar">
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>© 2024 ECI Informática. Todos os direitos reservados.</p>
+    </footer>
+</body>
+</html>

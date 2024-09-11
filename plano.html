@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="/style/style.css" rel="stylesheet">
+    <link href="/style/fonts.css" rel="stylesheet">
+    <link href="/style/media.css" rel="stylesheet">
+    <title>Contrate um Plano - ECI Informática</title>
+    <script>
+        function redirecionar() {
+            window.location.href = "cadastro-completo.html";
+        }
+    </script>
+</head>
+<body>
+    <header>
+        <div id="title">
+            <h1>ECI Informática</h1>
+            <h1>Tecnologia e Inovação</h1>
+            <img src="Images/tendencias-em-tecnologia-para-2023-o-que-ja-vingou-o-que-ficou-pelo-caminho-e-novas-apostas.jpg" alt="Imagem de tecnologia" class="imagem-reduzida">
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Início</a></li>
+                <li><a href="servicos.html">Serviços</a></li>
+                <li><a href="sobre.html">Sobre</a></li>
+                <li><a href="contato.html">Contato</a></li>
+                <li><a href="plano.html" id="plano-btn">Contrate um plano</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="plano">
+            <h2>Contrate um Plano</h2>
+            <p>Escolha o plano que melhor se adapta às suas necessidades e entre em contato conosco para mais informações.</p>
+                       
+            <h3>Planos Disponíveis</h3>
+            <ul>
+                <li><strong>Plano Básico:</strong> Suporte técnico básico e manutenção preventiva. <strong>R$ 80,00/mês</strong></li>
+                <li><strong>Plano Avançado:</strong> Inclui suporte técnico avançado, manutenção preventiva e consultoria em TI. <strong>R$ 150,00/mês</strong></li>
+                <li><strong>Plano Premium:</strong> Todos os benefícios do Plano Avançado, além de suporte 24/7 e serviços personalizados. <strong>R$ 250,00/mês</strong></li>
+            </ul>
+            
+            <h3>Entre em Contato</h3>
+            <p>Para contratar um plano, preencha o formulário abaixo ou entre em contato diretamente conosco através da nossa <a href="contato.html">página de contato</a>.</p>
+            
+            <form action="https://seusite.com/contratar-plano" method="post" class="formulario-plano" onsubmit="redirecionar(); return false;">
+                <label for="nome">Nome:</label>
+                <input type="text" id="nome" name="nome" placeholder="Seu nome" required>
+                
+                <label for="email">E-mail:</label>
+                <input type="email" id="email" name="email" placeholder="Seu e-mail" required>
+                
+                <label for="plano">Plano:</label>
+                <select id="plano" name="plano" required>
+                    <option value="basico">Plano Básico - R$ 80,00/mês</option>
+                    <option value="avancado">Plano Avançado - R$ 150,00/mês</option>
+                    <option value="premium">Plano Premium - R$ 250,00/mês</option>
+                </select>
+                
+                <input type="submit" value="Contratar">
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>© 2024 ECI Informática. Todos os direitos reservados.</p>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="/style/style.css" rel="stylesheet">
+    <link href="/style/fonts.css" rel="stylesheet">
+    <link href="/style/media.css" rel="stylesheet">
+    <title>Contato - ECI Informática</title>
+    <style>
+        /* Adicione estilo para a mensagem de confirmação */
+        .confirmation-message {
+            display: none;
+            padding: 10px;
+            margin-top: 10px;
+            background-color: #dff0d8;
+            color: #3c763d;
+            border: 1px solid #d6e9c6;
+            border-radius: 4px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div id="title">
+            <h1>ECI Informática</h1>
+            <h2>Tecnologia e Inovação</h2>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Início</a></li>
+                <li><a href="servicos.html">Serviços</a></li>
+                <li><a href="sobre.html">Sobre</a></li>
+                <li><a href="contato.html">Contato</a></li>
+                <li><a href="plano.html" id="plano-btn">Contrate um plano</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <h2>Contato</h2>
+        <p>Entre em contato conosco:</p>
+        <form id="contact-form" action="/enviar-contato" method="post">
+            <label for="nome">Nome:</label>
+            <input type="text" id="nome" name="nome" placeholder="Seu nome" required>
+            
+            <label for="email">E-mail:</label>
+            <input type="email" id="email" name="email" placeholder="Seu e-mail" required>
+            
+            <label for="mensagem">Mensagem:</label>
+            <textarea id="mensagem" name="mensagem" placeholder="Sua mensagem" required></textarea>
+            
+            <input type="submit" value="Enviar">
+        </form>
+        <div id="confirmation-message" class="confirmation-message">
+            Em breve entrarei em contato.
+        </div>
+    </main>
+
+    <footer>
+        <p>© 2024 ECI Informática. Todos os direitos reservados.</p>
+    </footer>
+
+    <script>
+        document.getElementById('contact-form').addEventListener('submit', function(event) {
+            event.preventDefault(); // Impede o envio real do formulário
+            
+            // Exibe a mensagem de confirmação
+            document.getElementById('confirmation-message').style.display = 'block';
+            
+            
+        });
+    </script>
+</body>
+</html>
